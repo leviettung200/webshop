@@ -4,8 +4,8 @@
 @section('content')
 
     <!-- slider start -->
-    <div id="home-area" class="height-100vh bg-img watch-slider my_bg_show" >
-    <style>.my_bg_show{background-image: url("{{asset($banner->image)}}");}</style>
+    <div id="home-area" class="height-100vh bg-img watch-slider my_bg_show"  style="background-image: url('{{asset($banner->image)}}')">
+{{--    <style>.my_bg_show{background-image: url("{{asset($banner->image)}}");}</style>--}}
         <div class="table">
             <div class="table-cell">
                 <div class="container">
@@ -65,7 +65,7 @@
     <div class="overview-area bg-img pt-70 pb-70" >
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 d-flex">
+                <div class="col-lg-5 d-flex my-whyImg">
                     <img width="100%" style="margin: auto" src="/frontend/img/my-img/banner10_1.png" alt="">
                 </div>
                 <div class=" col-lg-7">
@@ -76,25 +76,25 @@
                             cạnh tranh với đối thủ chỉ bằng giá cả...mà bằng chất lượng và giá trị mạng lại cho khách hàng!</p>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="single-overview">
                                 <h4>Với đội ngũ nhân sự chuyên nghiệp</h4>
                                 <p>Chuyên môn cao, luôn đam mê sáng tạo và tận tâm, trách nhiệm với khách hàng</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="single-overview">
                                 <h4>Website được tối ưu cho đa trình duyệt</h4>
                                 <p>Safari hay Chrome, Firefox hay Cốc Cốc, dù khách hàng của bạn dùng trình duyệt phổ biến nào cũng được</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="single-overview">
                                 <h4>Website được tối ưu cho đa thiết bị</h4>
                                 <p>Website hiển thị tốt trên máy bàn, laptop, máy tính bảng, điện thoại, thậm chí là cả... tivi</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="single-overview">
                                 <h4>Website mã nguồn riêng bảo mật cao</h4>
                                 <p>Bảo mật cao để website không bị hack, không bị đánh cắp thông tin đơn hàng </p>
@@ -117,7 +117,7 @@
                         <p>Hiệu quả chính là mục tiêu hàng đầu của chúng tôi mỗi khi bắt đầu thiết kế website cho khách hàng. </p>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-4 col-lg-4">
                             <div class="single-power-feathers-wrapper">
                                 <div class="single-power-feathers mb-30">
                                     <img src="/frontend/img/icon-img/29.png" alt="">
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-4 col-lg-4">
                             <div class="single-power-feathers-wrapper">
                                 <div class="single-power-feathers mb-30 ">
                                     <img src="/frontend/img/icon-img/30.png" alt="">
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-4 col-lg-4">
                             <div class="single-power-feathers-wrapper">
                                 <div class="single-power-feathers mb-30 ">
                                     <img src="/frontend/img/icon-img/31.png" alt="">
@@ -289,7 +289,7 @@
     <div class="footer-middle black-bg-2 ptb-30">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-sm-4">
                     <div class="footer-services-wrapper">
                         <div class="footer-services-icon">
                             <i class="pe-7s-medal"></i>
@@ -300,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-sm-4">
                     <div class="footer-services-wrapper">
                         <div class="footer-services-icon">
                             <i class="pe-7s-shield"></i>
@@ -311,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-sm-4">
                     <div class="footer-services-wrapper">
                         <div class="footer-services-icon">
                             <i class="pe-7s-headphones"></i>

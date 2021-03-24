@@ -240,11 +240,12 @@ class ShopController extends GeneralController
         $product = Product::where(['is_active'=>1,'slug'=> $slug])->get();
 //        dd($product->first());
         if($product->first() != null) {
-//            dd('true');
             $product = $product->first();
+        }else{
+            return redirect()->route('shop.404');
         }
 
-        $relatedPros = Product::where([['slug','<>',$slug],['is_active','=',1],['is_hot','=',1],['category_id','=', $product->category_id]])
+        $relatedPros = Product::where([['slug','<>',$slug],['is_active','=',1],['category_id','=', $product->category_id]])
             ->limit(9)
             ->orderBy('position', 'ASC')
             ->orderBy('id', 'DESC')
@@ -273,7 +274,13 @@ class ShopController extends GeneralController
     }
     public function getDetailArticle($slug)
     {
-        $article = Article::where(['is_active'=>1,'slug'=> $slug])->first();
+        $article = Article::where(['is_active'=>1,'slug'=> $slug])->get();
+
+        if($article->first() != null) {
+            $article = $article->first();
+        }else{
+            return redirect()->route('shop.404');
+        }
 
         $newArticles = Article::where([['is_active','=', 1],['type','=',1],['slug','<>',$slug]])
             ->orderBy('position', 'ASC')

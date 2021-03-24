@@ -21,7 +21,7 @@
                             <h3 class="sidebar-title">Tìm kiếm</h3>
                             <div class="sidebar-search">
                                 <form action="{{route('shop.search')}}" method="GET">
-                                    <input value="{{isset($keyword) ? $keyword : ''}}" placeholder="Tìm mẫu website ..." type="text" name="keyword">
+                                    <input value="{{isset($keyword) ? $keyword : ''}}" placeholder="Tìm mẫu website ..." type="text" name="q">
                                     <button><i class="ti-search"></i></button>
                                 </form>
                             </div>
@@ -119,9 +119,6 @@
 {{--                                                            @endif--}}
                                                             <img src="{{asset($product->image)}}" alt="">
                                                         </a>
-                                                        @if($product->is_hot == 1)
-                                                            <span>hot</span>
-                                                        @endif
 
                                                         <div class="product-action">
                                                             <a class="animate-left" title="Yêu thích" href="javascript:void(0)">
@@ -185,7 +182,7 @@
 {{--                                                            {!! $product->summary !!}--}}
                                                         <div class="product-tags mt-30">
                                                             <span>Tag: </span>
-                                                            <ul style="min-height: 120px">
+                                                            <ul >
                                                                 @php
                                                                     $tags = $product->tags;
                                                                     $tags = explode(",",$tags);

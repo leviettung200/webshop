@@ -46,12 +46,7 @@
                                         <input type="file" class="" id="image" name="image">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputFile">Tags</label>
-                                        <input type="text" class="form-control" data-role="tagsinput" id="tags" name="tags" placeholder="Tag kết thúc bởi dấu ," value="{{old('tags')}}">
-                                    </div>
-                                </div>
+
                             </div>
 
                             <div class="row">
@@ -69,8 +64,8 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="exampleInputFile">Số lượng</label>
-                                        <input type="number" class="form-control" id="stock" name="stock" value="1" min="1">
+                                        <label for="exampleInputFile">Tags</label>
+                                        <input type="text" class="form-control" data-role="tagsinput" id="tags" name="tags" placeholder="Tag kết thúc bởi dấu ," value="{{old('tags')}}">
                                     </div>
                                 </div>
                             </div>

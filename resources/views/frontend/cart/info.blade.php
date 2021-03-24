@@ -41,8 +41,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="coupon-all">
                     <div class="coupon cart-page-total">
-                        <a href="{{route('shop.cart.destroy')}}" >Huỷ giỏ hàng</a>
-                        <a href="{{route('shop.projects')}}" class="ml-30">Tiếp tục mua hàng</a>
+                        <a href="{{route('shop.cart.destroy')}}" class="mr-30">Huỷ giỏ hàng</a>
+                        <a href="{{route('shop.projects')}}" >Tiếp tục mua hàng</a>
                     </div>
                     <div class="coupon2">
                         {{--                                    <input class="button" name="update_cart" value="Cập nhật" type="submit">--}}
@@ -70,11 +70,11 @@
 @else
 
     <h3 class="text-center mb-30"><i class="fa fa-opencart"></i>Bạn chưa có sản phẩm nào trong giỏ hàng</h3>
-    <div class="text-center">
-        <a href="/" class=" btn-info btn-lg mr-20" role="button" aria-pressed="true">
+    <div class="d-flex justify-content-around flex-wrap">
+        <a href="/" class=" btn-info btn-lg mt-20" role="button" aria-pressed="true">
             <i class="ti-arrow-left"></i> Về Trang Chủ
         </a>
-        <a href="{{route('shop.projects')}}" class=" btn-success btn-lg ml-20" role="button" aria-pressed="true">
+        <a href="{{route('shop.projects')}}" class=" btn-success btn-lg mt-20" role="button" aria-pressed="true">
             Tìm kiếm mẫu website <i class="ti-arrow-right"></i>
         </a>
     </div>

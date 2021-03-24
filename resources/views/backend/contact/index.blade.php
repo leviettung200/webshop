@@ -43,7 +43,7 @@
                                     <td>{{ $item->phone }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->subject }}</td>
-                                    <td>{{ $item->content }}</td>
+                                    <td>{{ $item->message }}</td>
                                     <td>{{ $item->created_at }}</td>
                                     <td class="text-center">
                                         <button onclick="deleteItem('contact',{{$item->id}})" class="btn btn-danger"><i class="fa fa-trash"></i></button>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Website</title>
+    <title>Website | Template hàng đầu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/frontend/css/style.css">
     <link rel="stylesheet" href="/frontend/css/responsive.css">
     <link rel="stylesheet" href="/frontend/css/myCustom.css">
+    <link rel="stylesheet" href="/frontend/css/myResponsive.css">
 
 
     <script src="/frontend/js/vendor/modernizr-2.8.3.min.js"></script>

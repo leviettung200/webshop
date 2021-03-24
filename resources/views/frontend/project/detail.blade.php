@@ -13,7 +13,7 @@
         </div>
     </div>
     <!-- shopping-cart-area start -->
-    <div class="product-details ptb-100 pb-90">
+    <div class="product-details pt-100">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-6 col-12">
@@ -67,21 +67,21 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <div class="product-share">
-                            <ul>
-                                <li class="categories-title">Share :</li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icofont icofont-social-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icofont icofont-social-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+{{--                        <div class="product-share">--}}
+{{--                            <ul>--}}
+{{--                                <li class="categories-title">Share :</li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="#">--}}
+{{--                                        <i class="icofont icofont-social-facebook"></i>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="#">--}}
+{{--                                        <i class="icofont icofont-social-twitter"></i>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
 
                     </div>
                 </div>
@@ -115,8 +115,9 @@
                             <a href="{{route('shop.project.detail',['slug'=>$relatedPro->slug])}}" >
                                 <img src="{{asset($relatedPro->image)}}" alt="">
                             </a>
-                            <span>hot</span>
-
+                            @if($relatedPro->is_hot == 1)
+                                <span>hot</span>
+                            @endif
                         </div>
                         <div class="product-content">
                             <h4><a href="{{route('shop.project.detail',['slug'=>$relatedPro->slug])}}">{{$relatedPro->name}}</a></h4>

@@ -798,9 +798,7 @@
     .buy-now-btn > a {
         padding: 14px 18px 12px;
     }
-    .watch-about-content > p {
-        width: 68%;
-    }
+
     .single-power-feathers > h4 {
         font-size: 16px;
     }
@@ -1600,9 +1598,7 @@
     .wrapper-padding-5 .container-fluid {
         padding: 0 30px;
     }
-    .widget-wrapper {
-        display: block;
-    }
+
     .subscribe-form-5 form input {
         width: 100%;
     }
@@ -3094,7 +3090,7 @@
     }
     .header-cart-4 > a {
         display: block;
-        padding: 42px 0;
+        padding-top: 42px;
         position: relative;
     }
     .handicraft-search > button {
@@ -3128,7 +3124,7 @@
         padding: 80px 0;
     }
     .watch-about-content > h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .watch-about-content > p {
         width: 100%;
@@ -3417,9 +3413,9 @@
     .handicraft-search-cart {
         margin-right: 55px;
     }
-    .handicraft-search {
-        display: none;
-    }
+    /*.handicraft-search {*/
+    /*    display: none;*/
+    /*}*/
     .sports-mobile-menu .mean-container a.meanmenu-reveal span {
         background: #fff none repeat scroll 0 0;
     }
@@ -3470,10 +3466,7 @@
     .pb-210 {
         padding-bottom: 95px;
     }
-    .coupon2 {
-        float: left;
-        margin-top: 20px;
-    }
+
     .coupon-all input.button {
         padding: 0 14px;
     }

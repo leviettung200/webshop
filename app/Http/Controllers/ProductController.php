@@ -98,22 +98,25 @@ class ProductController extends Controller
             $product->image = $path_upload.$filename;
         }
         $product->tags = $request->input('tags');
-        $product->stock = $request->input('stock'); // số lượng
         $product->price = $request->input('price');
         $product->sale = $request->input('sale');
         $product->category_id = $request->input('category_id');
         $product->brand_id = $request->input('brand_id');
         $product->vendor_id = $request->input('vendor_id');
         $product->sku = $request->input('sku');
-        $product->position = $request->input('position');
         $product->url = $request->input('url');
 
         $is_active = 0;// mặc định gán không hiển
         if ($request->has('is_active')) { // kiem tra is_active co ton tai khong ?
             $is_active = $request->input('is_active');
         }
-
         $product->is_active = $is_active;
+
+        $position = 0;
+        if (is_null($request->has('position'))) {
+            $position = $request->input('position');
+        }
+        $product->position = $position;
 
         // Sản phẩm Hot
         $is_hot = 0 ;

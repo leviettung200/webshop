@@ -48,7 +48,11 @@
                                     </td>
                                     <td>{{$item->parent->name or ''}}</td>
                                     <td>{{$item->position}}</td>
-                                    <td>{{($item->is_active == 1 ) ? 'Hiển Thị' : 'Ẩn'}}</td>
+                                    @if($item->is_active == 1)
+                                        <td class="text-green"> <i class="fa fa-eye" ></i> Hiển thị</td>
+                                    @else
+                                        <td> <i class="fa fa-eye-slash"></i> Ẩn</td>
+                                    @endif
                                     <td>{{($item->type == 1 ) ? 'Mẫu Website' : 'Khác'}}</td>
 
                                     <td class="text-center">

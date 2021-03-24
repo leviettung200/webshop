@@ -52,8 +52,16 @@
 {{--                                    <td>{{ $item->sale }}</td>--}}
 {{--                                    <td>{{ $item->price }}</td>--}}
                                     <td>{{$item->position}}</td>
-                                    <td>{{ ($item->is_hot == 1) ? 'Có' : 'Không' }}</td>
-                                    <td>{{ ($item->is_active == 1) ? 'Hiển thị' : 'Ẩn' }}</td>
+                                    @if($item->is_hot == 1)
+                                        <td class="text-red "> <i class="fa fa-star"></i> Có</td>
+                                    @else
+                                        <td class=""><i class="fa fa-star-o"></i> Không</td>
+                                    @endif
+                                    @if($item->is_active == 1)
+                                        <td class="text-green"> <i class="fa fa-eye" ></i> Hiển thị</td>
+                                    @else
+                                        <td> <i class="fa fa-eye-slash"></i> Ẩn</td>
+                                    @endif
                                     <td class="text-center">
                                         <a href="{{route('admin.product.edit', ['id'=> $item->id])}}" class="btn bg-purple">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

@@ -54,7 +54,11 @@
                                     <td width="30%">{!! $item->summary !!}</td>
                                     <td>{{$item->position}}</td>
                                     <td>{{$item->type == 1 ? 'Tin tức' : 'Khác'}}</td>
-                                    <td>{{ ($item->is_active == 1) ? 'Hiển thị' : 'Ẩn' }}</td>
+                                    @if($item->is_active == 1)
+                                        <td class="text-green"> <i class="fa fa-eye" ></i> Hiển thị</td>
+                                    @else
+                                        <td> <i class="fa fa-eye-slash"></i> Ẩn</td>
+                                    @endif
                                     <td class=" text-center">
 {{--                                        <a href="{{route('admin.article.show', ['id'=> $item->id ])}}" class="btn btn-default" title="Xem">--}}
 {{--                                            <i class="fa fa-eye" aria-hidden="true"></i>--}}

@@ -30,7 +30,7 @@
                                     </div>
                                     <h4 ><a href="{{route('shop.article.detail',['slug'=> $article->slug])}}">{{$article->title}}</a></h4>
                                     {!! $article->summary !!}
-                                    <a class="blog-btn btn-hover" href="#">Đọc thêm</a>
+                                    <a class="blog-btn btn-hover" href="{{route('shop.article.detail',['slug'=> $article->slug])}}">Đọc thêm</a>
                                 </div>
                             </div>
                         </div>

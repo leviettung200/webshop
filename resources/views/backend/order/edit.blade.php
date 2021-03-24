@@ -61,7 +61,7 @@
                                     <td><label>Email :</label></td>
                                     <td>{{ $order->email }}</td>
                                     <td><label>Khuyến mại</label></td>
-                                    <td>{{ $order->discount }} đ</td>
+                                    <td>{{ number_format($order->discount) }} đ</td>
                                 </tr>
                                 <tr>
 {{--                                    <td><label>Địa chỉ :</label> </td>--}}

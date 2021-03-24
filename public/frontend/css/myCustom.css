@@ -178,8 +178,7 @@ box1{
 }
 .owl-dots .owl-dot.active {
   background-color: #000;
-  width: 10px;
-  height: 10px;
+  transform: scale(0.75);
 
 }
 .owl-dots .owl-dot:focus {
@@ -1047,4 +1046,7 @@ section {
 
 .collapse.show .card-body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.blog-details-info img{
+    max-width: 100%;
 }

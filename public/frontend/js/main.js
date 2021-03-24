@@ -222,13 +222,16 @@
         autoplayHoverPause:true,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
-            768: {
+            480: {
                 items: 3
             },
-            1000: {
+            768: {
                 items: 4
+            },
+            992:{
+                items: 5
             },
             1200: {
                 items: 6
@@ -318,7 +321,7 @@
         loop: true,
         nav: false,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3000,
         autoplayHoverPause:true,
         animateOut: 'fadeOutRightBig',
         // animateIn: 'flipInX',
@@ -328,10 +331,13 @@
             0: {
                 items: 1
             },
+            480: {
+                items: 2
+            },
             768: {
                 items: 2
             },
-            1000: {
+            992: {
                 items: 3
             },
             1200: {
@@ -356,9 +362,9 @@
             768: {
                 items: 2
             },
-            1000: {
-                items: 3
-            },
+            // 992: {
+            //     items: 2
+            // },
             1200: {
                 items: 3
             }

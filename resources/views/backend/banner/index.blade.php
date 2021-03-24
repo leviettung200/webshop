@@ -45,7 +45,11 @@
                                     <td>{{ $item->target }}</td>
                                     <td>{{ $item->type ==1 ? 'Slide' : 'Background' }}</td>
                                     <td>{{ $item->position }}</td>
-                                    <td>{{ ($item->is_active == 1) ? 'Hiển thị' : 'Ẩn' }}</td>
+                                    @if($item->is_active == 1)
+                                        <td class="text-green"> <i class="fa fa-eye" ></i> Hiển thị</td>
+                                    @else
+                                        <td> <i class="fa fa-eye-slash"></i> Ẩn</td>
+                                    @endif
                                     <td class="text-center">
                                         <a href="{{route('admin.banner.edit',['id'=>$item->id])}}" class="btn bg-purple">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
