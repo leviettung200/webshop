@@ -33,6 +33,8 @@ Route::get('/tin-tuc/{slug}', 'ShopController@getDetailArticle')->name('shop.art
 
 //giới thiệu
 Route::get('/gioi-thieu', 'ShopController@about')->name('shop.about');
+Route::get('/dang-ky-ten-mien', 'DomainController@indexDomain')->name('shop.indexDomain');
+Route::get('/ten-mien', 'DomainController@aboutDomain')->name('shop.aboutDomain');
 
 //tìm kiếm
 Route::get('/tim-kiem', 'ShopController@search')->name('shop.search');

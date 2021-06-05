@@ -19,6 +19,7 @@ $(function() {
             url: $(form).attr('action'),
             data: formData,
             success: function(response) {
+
                 // console.log(response);
                 //
                 // $(formMessages).removeClass('alert-danger');

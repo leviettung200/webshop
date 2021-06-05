@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/frontend/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset($setting->image)}}">
     <base href="{{ asset('') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- all css here -->

@@ -2406,7 +2406,7 @@ a.banner-book-style-btn:hover {
     box-shadow: 0 0 15px 0.08px rgba(0, 0, 0, 0.15);
     left: 110%;
     opacity: 0;
-    padding: 35px 0 40px;
+    padding: 20px;
     position: absolute;
     text-align: left;
     top: 0;
@@ -2679,15 +2679,16 @@ a.banner-book-style-btn:hover {
     opacity: 0;
     top: 110%;
     visibility: hidden;
-    width: 500px;
+    width: 600px;
 }
 .category-common2 {
     float: left;
-    padding-left: 40px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
-    width: 50%;
+    width: 70%;
 }
+
 .menu-style-2 .mega-banner-img a {
     padding: 0px 0 0px;
 }

@@ -17,14 +17,14 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-up">
-                <h2>VINAWEB</h2>
+                <h2>Hoàng Vinh</h2>
             </div>
 
             <div class="row content">
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
                     <p>
                         Nếu bạn muốn có một website cao cấp, chuyên nghiệp để mang lại khách hàng cho bạn.
-                        Vinaweb hướng đến điều đó.Chúng tôi không cạnh tranh với đối thủ chỉ bằng giá cả...
+                        Hoàng Vinh hướng đến điều đó.Chúng tôi không cạnh tranh với đối thủ chỉ bằng giá cả...
                         mà bằng chất lượng và giá trị mạng lại cho khách hàng!
 
 
@@ -36,8 +36,8 @@
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
                     <p>
-                        Được thành lập từ năm 2009 Sau 10 năm nỗ lực không ngừng, hàng nghìn khách hàng đã nhớ đến cái tên Vinaweb - Công ty hàng đầu trong lĩnh vực thiết kế web và quảng cáo trực tuyến. Với một đội ngũ chuyên gia có tư duy tốt, kỹ thuật chuyên môn cao, say mê công việc.
-                        Sự chuyên sâu tạo nên sức mạnh cho Vinaweb trong việc ngày càng nâng cao chất lượng dịch vụ cho khách hàng và đối tác.
+                        Được thành lập từ năm 2009 Sau 10 năm nỗ lực không ngừng, hàng nghìn khách hàng đã nhớ đến cái tên Hoàng Vinh - Công ty hàng đầu trong lĩnh vực thiết kế web và quảng cáo trực tuyến. Với một đội ngũ chuyên gia có tư duy tốt, kỹ thuật chuyên môn cao, say mê công việc.
+                        Sự chuyên sâu tạo nên sức mạnh cho Hoàng Vinh trong việc ngày càng nâng cao chất lượng dịch vụ cho khách hàng và đối tác.
 
                     </p>
                 </div>

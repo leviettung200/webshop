@@ -37,10 +37,33 @@
     </div>
 
     <!-- overview area start -->
-    <div class="overview-area pt-70 bg-img" style="background-image: url(/frontend/img/bg/8.jpg)">
+    <div class="overview-area bg-img" style="background-image: url(/frontend/img/bg/8.jpg)">
         <div class="container">
-            <div class="row">
+            <div class="only-domain">
+                <div class="dm-box" >
+                    <div class="section-title text-center" data-aos="fade-up" style="padding-bottom: 15px">
+                        <h2 >Tra cứu tên miền</h2>
+{{--                        <p style="font-size: 16px; margin-top: 10px">Kiểm tra & Đăng ký tên miền ngay để bảo vệ thương hiệu của doanh nghiệp trên Internet--}}
+{{--                        </p>--}}
+                    </div>
 
+                    <div >
+                        <form action="" method="GET" id="checkDomain">
+                            @csrf
+                            <div class="" style="margin: 0 auto">
+                                <div class="simple-search ">
+                                    <input required id="keyDomain"  name="keyDomain" type="text" placeholder="Nhập tên miền bạn muốn đăng ký, tra cứu"/>
+                                    <button  type="submit" >Tìm kiếm</button>
+                                </div>
+                                <div class=" text-center mt-10 " id="resultDomain" >
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-50">
                 <div class="ml-auto col-lg-6">
                     <div class="watch-about-content text-center">
                         <h2>Về Chúng Tôi</h2>
@@ -218,13 +241,8 @@
                                 @endforeach
                             </div>
                         </div>
-
-
                 @endforeach
-
-
             </div>
-
 
             <div class="catch-btn mt-0">
                 <a class="discount-btn-2 btn-hover" href="{{route('shop.projects')}}"  style="border: 1px solid;">Xem tất cả</a>
@@ -232,7 +250,7 @@
 
         </div>
     </div>
-
+    </div>
     <!-- feadback area start -->
     <div class="pricing-table-area">
         <div class="container">
@@ -265,6 +283,7 @@
                 @endforeach
             </div>
         </div>
+    </div>
     </div>
     <div style="background-image: url(/frontend/img/bg/16.jpg)">
         <div class="section-title-8 peragraph-width-3 text-center pt-50" >
@@ -327,3 +346,57 @@
     </div>
 
 @endsection('content')
+@section('script')
+    <script>
+
+        // Get the form.
+        let formDM = $('#checkDomain');
+
+        // Get the messages div.
+        let messDM = $('#resultDomain');
+        let resultDomain = document.getElementById("resultDomain");
+
+        let loading = '<div class="dots-loading">\n' +
+            '                            <div></div>\n' +
+            '                            <div></div>\n' +
+            '                            <div></div>\n' +
+            '                            <div></div>\n' +
+            '                        </div>';
+
+        // Set up an event listener for the contact form.
+
+        $(formDM).on('submit', function (e) {
+
+            e.preventDefault();
+            $(messDM).empty();
+            $(messDM).append(loading);
+            resultDomain.scrollIntoView({behavior: "smooth",block: "center"});
+
+            $.ajax({
+                type: 'GET',
+                url: "{{ route('checkDomain') }}",
+                data: $(formDM).serialize(),
+                success: function(response) {
+
+                    $(messDM).removeClass('text-danger');
+                    $(messDM).addClass('text-success');
+
+                    //set text
+                    $(messDM).empty();
+                    $(messDM).append(response.result);
+
+                }, error: function(error) {
+
+                    $(messDM).removeClass('text-success');
+                    $(messDM).addClass('text-danger');
+
+                    //set text
+                    $(messDM).empty();
+                    $(messDM).append(error.responseJSON['result']);
+
+                }
+            })
+
+        });
+    </script>
+@endsection

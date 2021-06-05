@@ -8,7 +8,7 @@
     text-align: center;
 }
 .footer-widget img{
-    width: 20em;
+    width: 15em;
 }
 .subscribe-form-5 .mc-form .clear{
     right: 7%;
@@ -27,7 +27,25 @@
     .height-100vh{
         height: 20em;
     }
-
+    .dm-box .section-title h2{
+        font-size: 16px;
+    }
+    .overview-area .dm-box {
+        width: 90%;
+        padding: 5px;
+        top: -7%;
+    }
+    .overview-area .dm-box .simple-search input{
+        width: 60%;
+        height: 40px;
+    }
+    .overview-area .dm-box .simple-search button{
+        width: 35%;
+        height: 40px;
+    }
+    #resultDomain{
+        font-size: 14px;
+    }
     .handicraft-menu .mean-container a.meanmenu-reveal{
         top: -62px;
     }
@@ -123,6 +141,17 @@
     .header-cart-4{
         top: -28px;
     }
+    .overview-area .dm-box {
+        width: 80%;
+        padding: 10px;
+        top: -5%;
+    }
+    .overview-area .dm-box .simple-search input{
+        height: 40px;
+    }
+    .overview-area .dm-box .simple-search button{
+        height: 40px;
+    }
     /*.mean-container .mean-nav{*/
     /*    margin-top: -87px;*/
     /*}*/
@@ -190,6 +219,17 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
+    .overview-area .dm-box {
+        width: 80%;
+        padding: 10px;
+        top: -4%;
+    }
+    .overview-area .dm-box .simple-search input{
+        height: 40px;
+    }
+    .overview-area .dm-box .simple-search button{
+        height: 40px;
+    }
     .height-100vh{
         height: 30em;
     }
@@ -234,6 +274,12 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
+    .overview-area .dm-box {
+        width: 70%;
+        padding: 10px;
+        top: -16%;
+    }
+
     .height-100vh{
         height: 40em;
     }

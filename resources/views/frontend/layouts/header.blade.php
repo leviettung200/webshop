@@ -12,6 +12,12 @@
                         <ul>
                             <li><a href="/">Trang chủ </a></li>
                             <li><a href="{{route('shop.about')}}">Giới thiệu </a></li>
+                            <li><a href="#">Tên miền <i class="pe-7s-angle-down"></i></a>
+                                <ul class="single-dropdown">
+                                    <li><a href="{{route('shop.aboutDomain')}}">Tên miền là gì</a></li>
+                                    <li><a href="{{route('shop.indexDomain')}}">Đăng ký tên miền</a></li>
+                                </ul>
+                            </li>
                             <li><a href="{{route('shop.projects')}}">Mẫu Website<i class="pe-7s-angle-down"></i></a>
                                 <ul class="single-dropdown">
                                     @foreach($menu as $item)

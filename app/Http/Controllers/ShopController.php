@@ -294,7 +294,6 @@ class ShopController extends GeneralController
     {
         return view('frontend.about');
     }
-
     public function notfound()
     {
         return view('errors.404');
