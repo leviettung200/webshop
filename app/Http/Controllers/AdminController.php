@@ -84,8 +84,6 @@ class AdminController extends Controller
         }
 
         return redirect()->back()->with('msg', 'Email hoặc Password không chính xác');
-
-
     }
 
     public function logout()
